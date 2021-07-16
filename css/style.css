@@ -43,7 +43,7 @@ h4 {
     min-width: 135px;
     padding: 20px 32px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 14px;
     border: none;
     border-radius: 5px;
@@ -107,6 +107,73 @@ h4 {
 .header .header-text-2 {
     font-size: 18px;
     margin:25px 0;
+}
+
+.sub-header {
+    width: 100%;
+    z-index: 1;
+    padding: 25px 40px;
+    background: linear-gradient(320deg
+    , #0F495C 0%, #0D3640 49.72%, #08141F 100%);
+    
+}
+
+.sub-header__grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "img text text btn";
+        grid-gap: 30px;
+        align-items: center;
+        max-width: 1520px;
+        margin: 0 auto;
+}
+
+.sub-header__img {
+    grid-area: img;
+}
+.middle-sub-header {
+    grid-area: text;
+    
+}
+
+.middle-sub-header h4 {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height:13px;
+    padding-bottom: 8px;
+}
+
+.middle-sub-header h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    
+}
+
+.middle-sub-header a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.sub-header__btn {
+    grid-area: btn;
+    text-align: center;
+    justify-self: end;
+}
+
+.btn-sub-header {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.sub-header__btn p {
+    color: #fff;
+    text-decoration:underline;
+    font-size: 10px;
+    padding-top: 5px;
 }
 
 /*Media Queries*/
