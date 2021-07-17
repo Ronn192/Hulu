@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    color: #fff;
 }
 
 html, body {
@@ -30,6 +31,10 @@ img {
     width: 100%;
 }
 
+h2 {
+    color: #fff;
+}
+
 h3 {
     font-size:26px;
     font-weight: 300;
@@ -40,6 +45,10 @@ h4 {
     color: #00ed82;
     font-size: 13px;
     text-transform: uppercase;
+}
+
+p {
+    color: #fff;
 }
 
 .btn {
@@ -154,79 +163,107 @@ h4 {
 .sub-header > div:last-of-type {
     text-align: center;
 }
-/*
-.sub-header {
-    width: 100%;
-    z-index: 1;
-    padding: 25px 40px;
-    background: linear-gradient(320deg
-    , #0F495C 0%, #0D3640 49.72%, #08141F 100%);
-    
+
+.library {
+    background-color: black;
 }
 
-.sub-header__grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        "img text text btn";
-        grid-gap: 30px;
-        align-items: center;
-        max-width: 1520px;
-        margin: 0 auto;
-}
-
-.sub-header__img {
-    grid-area: img;
-}
-.middle-sub-header {
-    grid-area: text;
-    
-}
-
-.middle-sub-header h4 {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height:13px;
-    padding-bottom: 8px;
-}
-
-.middle-sub-header h3 {
-    color: #fff;
-    font-weight: 300;
-    font-size: 24px;
-    
-}
-
-.middle-sub-header a {
-    color: #fff;
-    text-decoration: underline;
-    font-size: 14px;
-}
-.sub-header__btn {
-    grid-area: btn;
+.library__header {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 55px;
     text-align: center;
-    justify-self: end;
+    line-height:1.5;
+    max-width: 996px;
+    margin: 0 auto;
+    font-weight:300;
 }
 
-.btn-sub-header {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
+.library__header  h2{
+    font-size: 64px;
+    letter-spacing: -0.5px;
 }
 
-.sub-header__btn p {
-    color: #fff;
-    text-decoration:underline;
-    font-size: 10px;
-    padding-top: 5px;
+.library__header h4 {
+    font-size: 14px;
+    font-weight:600;
 }
-*/
+
+.library__header p {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 792px;
+    margin: 0 auto;
+}
+
+.library__grid__container {
+    background-color: #000;
+}
+
+.library__grid {
+    display: grid;
+    grid-template-columns: repeat(4 , 295px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.library__grid-item {
+    position: relative;
+}
+.library__grid-item::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(
+        156.82deg
+        , rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),linear-gradient(
+        24.5deg
+        , rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%);
+}
+/* .library__grid__cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(
+        156.82deg
+        , rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),linear-gradient(
+        24.5deg
+        , rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%);
+} */
+
+.library__grid-item figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:25px;
+    line-height: 1.2;
+    
+}
 
 /*Media Queries*/
 @media(max-width: 768px) {
+    .header  {
+        height: 400px;
+    }
+
+    .header-content {
+        padding: 40px;
+    }
+
+    .h4 {
+        padding-top:40px;
+        font-weight: 500;
+    }
+
     .header .logo {
-        width: 200px;
+        width: 130px;
+        padding-top: 20px;
+        margin: 0;
     }
 
     .header .header-content {
@@ -235,7 +272,12 @@ h4 {
     }
 
     .header .header-text-1 {
-        margin-bottom: 40px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height:1.7;
+        text-align: center;
     }
 
     .header .header-text-2 {
@@ -256,5 +298,9 @@ h4 {
     .sub-header > div:last-of-type {
         justify-self: center;
         align-self: center;
+    }
+
+    .middle-sub-header h3 {
+        display: none;
     }
 }
