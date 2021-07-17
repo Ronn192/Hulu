@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color: #fff;
+}
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    background: #000;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+    font-size:26px;
+    font-weight: 300;
+    color: #fff;
+}
+
+h4 {
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #fff;
+}
