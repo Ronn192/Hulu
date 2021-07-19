@@ -207,9 +207,31 @@
     left: 0;
     padding:25px;
     line-height: 1.2;
-    
 }
 
+.library__item-legal {
+    color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    padding-top: 10px;
+}
+
+.title {
+    background-color: #151516;
+    font-family: "Graphik",Helvetica,Arial,sans-serif;
+    padding: 1px;
+}
+
+.title__border {
+    border: 5px solid rgb(20, 146, 20);
+    border-radius: 10px;
+    margin: 40px 20px;
+}
+
+.title__container {
+ text-align: center;
+ align-items: center;
+}
 
 @media(max-width: 768px) {
     .header  {
@@ -320,10 +342,21 @@
     figcaption span {
         font-size: 12px;
     }
+
+    .library__item-legal {
+        color: #fff;
+        font-size: 10px;
+        line-height: 16px;
+        padding-top: 10px;
+    }
 }
 
 @media(min-width: 768px) {
     .after-img span {
         display: none;
+    }
+
+    .sub-header-img2 {
+        display:none;
     }
 }
