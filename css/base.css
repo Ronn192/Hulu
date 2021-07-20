@@ -47,3 +47,8 @@ h4 {
 p {
     color: #fff;
 }
+
+.text-xl {
+    font-size: 64px;
+    font-weight: 800;
+}
